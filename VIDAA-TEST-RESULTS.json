@@ -1,0 +1,118 @@
+{
+  "upstream": "b08caf2310cea7340f897c5576795984b02e63b8",
+  "target": "Chromium 111 / VIDAA-MT9602",
+  "tested": "Windows 11 / Chrome 155; absent Promise.withResolvers simulated",
+  "ui_checks": [
+    "TV UI active without Android platform spoofing",
+    "Promise compatibility shim before app bootstrap",
+    "remote keyboard focus trap",
+    "Hisense Back closes keyboard and restores input",
+    "original API/store renders 9 deterministic fixture cards",
+    "BBC LRUD right navigation",
+    "BBC LRUD down navigation in 3-column TV grid",
+    "left arrow crosses from card grid to navigation rail",
+    "right arrow restores focused card from navigation rail",
+    "1920x1080 grid has three large cards per row",
+    "Russian remote input feeds original Svelte search state",
+    "original search flow and API preserved",
+    "original TV Player plays and pauses controlled DASH through upstream Shaka",
+    "original quality selector accessible with remote; focus retained after submenu update",
+    "Back closes quality menu without leaving player",
+    "original Shaka quality selection changes decoded video resolution",
+    "original TV settings available",
+    "original UI comparison mode preserved"
+  ],
+  "ui_runtime_errors": [],
+  "real_media_checks": [
+    {
+      "engine": "native",
+      "sample": "A",
+      "result": "PASS",
+      "width": 640,
+      "height": 360,
+      "audioRms": 0.04449024562866439,
+      "pause": true,
+      "seekForward10": true,
+      "seekBackward10": true
+    },
+    {
+      "engine": "native",
+      "sample": "B",
+      "result": "PASS",
+      "width": 854,
+      "height": 480,
+      "audioRms": 0.031082516990102546,
+      "pause": true,
+      "seekForward10": true,
+      "seekBackward10": true
+    },
+    {
+      "engine": "native",
+      "sample": "C",
+      "result": "PASS",
+      "width": 1280,
+      "height": 720,
+      "audioRms": 0.03123448516153791,
+      "pause": true,
+      "seekForward10": true,
+      "seekBackward10": true
+    },
+    {
+      "engine": "native",
+      "sample": "D",
+      "result": "PASS",
+      "width": 640,
+      "height": 360,
+      "audioRms": 0,
+      "pause": true,
+      "seekForward10": true,
+      "seekBackward10": true
+    },
+    {
+      "engine": "shaka",
+      "sample": "A",
+      "result": "PASS",
+      "width": 640,
+      "height": 360,
+      "audioRms": 0.043904554437581365,
+      "pause": true,
+      "seekForward10": true,
+      "seekBackward10": true
+    },
+    {
+      "engine": "shaka",
+      "sample": "B",
+      "result": "PASS",
+      "width": 854,
+      "height": 480,
+      "audioRms": 0.0313169405879285,
+      "pause": true,
+      "seekForward10": true,
+      "seekBackward10": true
+    },
+    {
+      "engine": "shaka",
+      "sample": "C",
+      "result": "PASS",
+      "width": 1280,
+      "height": 720,
+      "audioRms": 0.03136293577833021,
+      "pause": true,
+      "seekForward10": true,
+      "seekBackward10": true
+    },
+    {
+      "engine": "shaka",
+      "sample": "D",
+      "result": "PASS",
+      "width": 640,
+      "height": 360,
+      "audioRms": 0,
+      "pause": true,
+      "seekForward10": true,
+      "seekBackward10": true
+    }
+  ],
+  "hardware_test": "not performed",
+  "youtube_source": "not verified"
+}

@@ -1,0 +1,49 @@
+/* VIDAA skin: original layout/components and Materialious feature logic underneath. */
+html.vidaa-tv{font-size:20px;--primary:#fff;--surface:#0f0f0f;--on-surface:#f1f1f1;--surface-container:#181818;--surface-container-highest:#303030;--border-radius:.65rem;background:#0f0f0f;color:#f1f1f1}
+html.vidaa-tv body{font-family:Inter,Arial,sans-serif;background:#0f0f0f;color:#f1f1f1}
+html.vidaa-tv #left-nav{position:fixed!important;inset:0 auto 0 0!important;width:240px!important;max-width:240px!important;padding:30px 18px!important;background:#121212!important;display:flex!important;flex-direction:column!important;gap:8px!important;align-items:stretch!important;overflow-y:auto;z-index:60}
+html.vidaa-tv #left-nav::before{content:'Materialious';display:block;color:#fff;font-size:25px;font-weight:750;padding:12px 12px 30px;letter-spacing:-1px}
+html.vidaa-tv #left-nav>a{width:100%!important;min-height:64px!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:18px!important;margin:0!important;padding:12px 18px!important;border-radius:12px!important;color:#ddd!important}
+html.vidaa-tv #left-nav>a>div{font-size:20px!important;line-height:1.3!important}
+html.vidaa-tv #left-nav>a.active{background:#333!important;color:#fff!important}
+html.vidaa-tv #left-nav>a:focus{background:#eee!important;color:#111!important;outline:none!important;box-shadow:0 0 0 3px #fff!important}
+html.vidaa-tv main.root{position:fixed;inset:0 0 0 240px!important;margin:0!important;max-width:none!important;width:auto!important;padding:42px 48px!important;background:#0f0f0f;overflow-y:auto;overflow-x:hidden}
+html.vidaa-tv main.root.full-window-main{inset:0!important;padding:0!important}
+html.vidaa-tv nav.bottom{display:none!important}
+html.vidaa-tv #main-content>.item-container{padding:12px 0!important}
+html.vidaa-tv .item-container>.grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 28px!important;margin:0!important}
+html.vidaa-tv .item-container>.grid>div{width:100%!important;max-width:none!important;grid-column:auto!important;padding:0!important}
+html.vidaa-tv .item-select{background:transparent!important;border:0!important;transition:transform 140ms ease;overflow:visible!important}
+html.vidaa-tv .item-select:focus,html.vidaa-tv .item-select.item-select-focused{outline:4px solid #fff!important;outline-offset:7px!important;transform:scale(1.025)!important;box-shadow:none!important}
+html.vidaa-tv .thumbnail{border-radius:12px!important;aspect-ratio:16/9!important;object-fit:cover}
+html.vidaa-tv .thumbnail-details{padding:16px 0 0!important}
+html.vidaa-tv .tv-root .bold{font-size:23px!important;line-height:1.3!important;font-weight:600}
+html.vidaa-tv .tv-root .author-details p,html.vidaa-tv .tv-root .author-details span,html.vidaa-tv .tv-root .author-details a{font-size:18px!important;color:#aaa}
+html.vidaa-tv .tv-play{display:none!important}
+html.vidaa-tv :is(button,a,input,summary,[tabindex]):focus{outline:4px solid #fff!important;outline-offset:4px!important;box-shadow:none!important}
+html.vidaa-tv button{min-height:54px;font-size:20px}
+html.vidaa-tv h1{font-size:44px}html.vidaa-tv h2{font-size:32px}html.vidaa-tv h4,html.vidaa-tv h5{font-size:28px}
+html.vidaa-tv #shown-info{background:#171717!important}
+html.vidaa-tv .player-settings{font-size:21px!important;min-width:310px;max-height:65vh;overflow:auto;z-index:200}
+html.vidaa-tv .player-settings li{min-height:54px;padding:12px 18px!important;cursor:pointer}
+html.vidaa-tv .player-settings li:focus{background:#eee;color:#111;outline:3px solid white!important}
+html.vidaa-tv .vidaa-player-settings{position:relative}
+html.vidaa-tv .vidaa-player-settings menu:not(.active){display:none!important}
+html.vidaa-tv .vidaa-player-settings menu.active{display:block!important;position:absolute;bottom:100%;right:0;background:#222}
+html.vidaa-tv dialog{background:#212121;color:white;max-height:85vh;overflow:auto}
+html.vidaa-tv .tv-settings .categories{font-size:22px}
+html.vidaa-tv #vidaa-keyboard{position:fixed;inset:10vh 14vw;z-index:10000;margin:0;padding:32px;border:2px solid #777;border-radius:18px;background:#202020;overflow:auto}
+html.vidaa-tv .vidaa-key-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:12px;margin-top:22px}
+html.vidaa-tv .vidaa-key-grid button{margin:0!important;width:100%;padding:10px}
+html.vidaa-tv .vidaa-entry{white-space:pre-wrap;overflow-wrap:anywhere;min-height:50px;padding:16px;background:#101010;border-radius:8px;font-size:28px}
+html.vidaa-tv .vidaa-diagnostic{padding:24px 0;max-width:1400px}
+html.vidaa-tv .vidaa-diagnostic pre{font:18px monospace;white-space:pre-wrap;overflow-wrap:anywhere;padding:20px;background:#181818;max-height:420px;overflow:auto}
+html.vidaa-tv .vidaa-diagnostic video{width:100%;height:48vh;background:#000}
+html.vidaa-tv .vidaa-legal{font-size:16px;color:#aaa;line-height:1.5}
+@media(prefers-reduced-motion:reduce){html.vidaa-tv *{transition:none!important;animation:none!important}}
+
+html.vidaa-tv #left-nav>a>div{white-space:normal;overflow-wrap:anywhere}html.vidaa-tv #left-nav>a>i{background:transparent!important}html.vidaa-tv .vidaa-page-heading{margin:0 0 26px;font-size:34px}
+
+html.vidaa-tv .item-container{max-width:100%;box-sizing:border-box;margin:0!important;padding:0!important}html.vidaa-tv .item-container>.grid{width:100%!important;max-width:100%!important;padding:0!important}html.vidaa-tv .tv-root .bold{color:#f1f1f1!important}
+
+html.vidaa-tv #left-nav.hide-element{display:none!important}
