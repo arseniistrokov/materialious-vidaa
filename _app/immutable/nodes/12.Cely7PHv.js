@@ -1,0 +1,1 @@
+import{Ut as e}from"../chunks/YmIpC3KQ.js";import{c as t}from"../chunks/kyjSuS2J.js";import{n,t as r}from"../chunks/DlDPoCGw.js";var i=e({load:()=>a});async function a({url:e}){let i=e.searchParams.get(`list`);if(i)throw n(302,t(`/playlist/[playlistId]`,{playlistId:i}));r(404)}export{i as universal};

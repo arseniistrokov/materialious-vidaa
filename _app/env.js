@@ -1,0 +1,1 @@
+export const env={PUBLIC_BUILD_WITH_BACKEND:"false"}

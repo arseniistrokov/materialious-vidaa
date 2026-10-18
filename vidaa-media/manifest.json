@@ -1,0 +1,162 @@
+[
+  {
+    "id": "baseline-360-aac441",
+    "url": "media/baseline-360-aac441.mp4",
+    "label": "A · Baseline 360p + AAC 44.1",
+    "description": "H.264 baseline L3.0, 640x360, 25 fps, yuv420p; AAC-LC 44.1 kHz 1 ch; 24 s; faststart",
+    "sha256": "30c43420e651a7f9e886022d9859d62e4cb3f1457173fc35f7074add81b0ee3b",
+    "bytes": 1534331,
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "profile": "Constrained Baseline",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "mime_codec_string": "avc1.42c01e",
+        "width": 640,
+        "height": 360,
+        "has_b_frames": 0,
+        "pix_fmt": "yuv420p",
+        "level": 30,
+        "r_frame_rate": "25/1"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_rate": "44100",
+        "channels": 1,
+        "channel_layout": "mono",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "duration": 24.0,
+    "boxes": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "id": "baseline-480-aac480",
+    "url": "media/baseline-480-aac480.mp4",
+    "label": "B · Baseline 480p + AAC 48",
+    "description": "H.264 baseline L3.0, 854x480, 25 fps, yuv420p; AAC-LC 48 kHz 2 ch; 24 s; faststart",
+    "sha256": "d9080129f3c897196b8c9c74de5e9e62fd3e6115dbc68ac2ae5feeb5e3cdcf0b",
+    "bytes": 2061974,
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "profile": "Constrained Baseline",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "mime_codec_string": "avc1.42c01e",
+        "width": 854,
+        "height": 480,
+        "has_b_frames": 0,
+        "pix_fmt": "yuv420p",
+        "level": 30,
+        "r_frame_rate": "25/1"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "duration": 24.0,
+    "boxes": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "id": "main-720-aac480",
+    "url": "media/main-720-aac480.mp4",
+    "label": "C · Main 720p + AAC 48",
+    "description": "H.264 main L3.1, 1280x720, 25 fps, yuv420p; AAC-LC 48 kHz 2 ch; 24 s; faststart",
+    "sha256": "ecbf70ac1cb10cb4383b34e5dea5001683b4982d73e4c298a8a3f75822940779",
+    "bytes": 3759237,
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "profile": "Main",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "mime_codec_string": "avc1.4d401f",
+        "width": 1280,
+        "height": 720,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 31,
+        "r_frame_rate": "25/1"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "duration": 24.0,
+    "boxes": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  {
+    "id": "baseline-360-silent",
+    "url": "media/baseline-360-silent.mp4",
+    "label": "D · Baseline 360p без аудио",
+    "description": "H.264 baseline L3.0, 640x360, 25 fps, yuv420p; no audio (isolation test); 24 s; faststart",
+    "sha256": "3c971af878dd29fc19d287119b5a00dfa9765d5ea92802cd87d3d2a24f6538dc",
+    "bytes": 1232156,
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "profile": "Constrained Baseline",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "mime_codec_string": "avc1.42c01e",
+        "width": 640,
+        "height": 360,
+        "has_b_frames": 0,
+        "pix_fmt": "yuv420p",
+        "level": 30,
+        "r_frame_rate": "25/1"
+      }
+    ],
+    "duration": 24.0,
+    "boxes": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  }
+]

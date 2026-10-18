@@ -1,0 +1,10 @@
+{
+  "application": "Materialious VIDAA experimental test",
+  "upstream": "b08caf2310cea7340f897c5576795984b02e63b8",
+  "sourceCommit": "72cadd235da093c320f083c724cfebfc332a29fb",
+  "sourceRepository": "https://github.com/arseniistrokov/materialious-vidaa/tree/source",
+  "license": "AGPL-3.0",
+  "jsTarget": "Chromium 111",
+  "hardwareVerified": false,
+  "youtubeSourceVerified": false
+}

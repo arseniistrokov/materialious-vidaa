@@ -1,0 +1,1 @@
+import{Ut as e}from"../chunks/YmIpC3KQ.js";import{c as t}from"../chunks/kyjSuS2J.js";import{n}from"../chunks/DlDPoCGw.js";var r=e({load:()=>i});async function i({params:e}){throw n(302,t(`/watch/[videoId]`,{videoId:e.slug}))}export{r as universal};
